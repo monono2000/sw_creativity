@@ -1,6 +1,6 @@
 const express = require('express');
 const mysql = require('mysql2/promise');
-const pythonScriptPath = '241217.py'; // Python 파일 경로
+const pythonScriptPath = 'selecting.py'; // Python 파일 경로
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const fs = require('fs').promises;
@@ -20,7 +20,7 @@ const execPromise = util.promisify(exec);
 
 // Python 스크립트 실행 함수
 async function runPythonScript() {
-  const pythonScriptPath = '241217.py'; // Python 스크립트 파일 경로
+  const pythonScriptPath = 'selecting.py'; // Python 스크립트 파일 경로
   console.log('Python 스크립트를 실행합니다...');
 
   try {
